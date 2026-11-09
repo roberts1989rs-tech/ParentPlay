@@ -1,0 +1,114 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Find Santa Near You | Christmas Grottos &amp; Events | ParentPlay</title><meta name="description" content="Looking for Santa grottos and Christmas events near you in the UK? Find tips and a local search to help plan a family festive outing."><link rel="canonical" href="https://parentplay.co.uk/find-santa.html"><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><div class="wrap nav"><a class="logo" href="index.html"><img src="logo.png" alt="ParentPlay"></a><nav class="navlinks"><a href="index.html">Home</a><a href="index.html#christmas">Christmas</a><a href="index.html#features">Features</a><a href="index.html#contact">Contact</a><a href="privacy.html">Privacy Policy</a></nav><span class="mobile-menu">ParentPlay</span></div></header><main class="pp-page"><div class="wrap"><a class="pp-back" href="index.html#christmas">← Back to ParentPlay Christmas</a><div class="pp-kicker">🎅 Festive days out</div><h1>Find Santa near you</h1><p class="pp-page-intro">Looking for a Santa's grotto, Christmas market or festive family experience? Start with a nearby search, then check the organiser's official booking details.</p><div class="pp-panel"><h2>Search for Santa experiences near you</h2><p>Use the link below to search Google Maps for Santa's grottos. Results come from Google Maps, not a verified ParentPlay events directory.</p><a class="pp-primary-link" href="https://www.google.com/maps/search/?api=1&amp;query=Santa%27s+grotto+near+me" target="_blank" rel="noopener noreferrer">Search Santa's grottos on Google Maps ↗</a><p class="pp-muted">We don't collect your location on this page. Google Maps may ask for permission to use it.</p></div><div class="pp-info-grid"><article class="pp-panel"><h2>Before you visit</h2><ul><li>Check the organiser's dates and opening times.</li><li>Confirm whether booking is required.</li><li>Check ticket prices and children's age guidance.</li><li>Look for accessibility and parking details.</li></ul></article><article class="pp-panel"><h2>Other festive searches</h2><p><a href="https://www.google.com/maps/search/?api=1&amp;query=Christmas+market+near+me" target="_blank" rel="noopener noreferrer">Christmas markets nearby ↗</a></p><p><a href="https://www.google.com/maps/search/?api=1&amp;query=Christmas+light+trail+near+me" target="_blank" rel="noopener noreferrer">Christmas light trails nearby ↗</a></p><p><a href="christmas-activities.html">Christmas activities to try at home →</a></p></article></div><div class="pp-panel"><h2>Coming to ParentPlay</h2><p>We're planning a dedicated festive search experience in the app. Until it's ready, use the external links above to find and verify local options.</p></div></div></main><footer class="footer"><div class="wrap footer-inner"><a href="index.html"><img src="logo.png" alt="ParentPlay"></a><nav><a href="index.html#christmas">Christmas</a><a href="index.html#contact">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav><a href="#" onclick="parentPlayCookieSettings(); return false;" style="color:inherit;text-decoration:underline;">Cookie Settings</a><span class="copyright">© 2026 ParentPlay</span></div></footer><div aria-label="Cookie preferences" hidden="" id="pp-cookie-banner" role="region" style="position:fixed;bottom:16px;left:16px;right:16px;max-width:560px;margin:auto;background:#fff;color:#243d35;padding:20px;border-radius:16px;box-shadow:0 4px 25px #0003;z-index:9999;font-family:Arial,sans-serif">
+<strong>Help us improve ParentPlay 🌳</strong>
+<p style="line-height:1.5">
+    We'd like to use optional analytics cookies to understand how
+    visitors use our website. You can accept or reject them.
+  </p>
+<div style="display:flex;gap:10px;flex-wrap:wrap">
+<button id="pp-reject" style="padding:12px;border:1px solid #36765d;border-radius:8px;background:white;color:#24543f;cursor:pointer" type="button">
+      Reject optional cookies
+    </button>
+<button id="pp-accept" style="padding:12px;border:0;border-radius:8px;background:#36765d;color:white;cursor:pointer" type="button">
+      Accept analytics
+    </button>
+</div>
+</div><script>
+(function () {
+  const measurementId = "G-3LKQXDK19L";
+  const storageKey = "parentplay_analytics_consent";
+  const banner = document.getElementById("pp-cookie-banner");
+  let analyticsLoaded = false;
+
+  function loadAnalytics() {
+    if (analyticsLoaded) return;
+    analyticsLoaded = true;
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () {
+      window.dataLayer.push(arguments);
+    };
+
+    window.gtag("js", new Date());
+    window.gtag("config", measurementId);
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=" +
+      encodeURIComponent(measurementId);
+    document.head.appendChild(script);
+  }
+
+ 
+function saveChoice(choice) {
+  try {
+    localStorage.setItem(storageKey, choice);
+  } catch (error) {
+    // If storage is unavailable, ask again next visit.
+  }
+
+  banner.hidden = true;
+
+  if (choice === "accepted") {
+    loadAnalytics();
+  } else {
+    // Stop future Analytics collection.
+    if (typeof window.gtag === "function") {
+      window.gtag("consent", "update", {
+        analytics_storage: "denied"
+      });
+    }
+
+    // Clear first-party Google Analytics cookies.
+    document.cookie.split(";").forEach(function (cookie) {
+      const name = cookie.split("=")[0].trim();
+
+      if (name === "_ga" || name.startsWith("_ga_")) {
+        const domains = [
+          "",
+          "; domain=parentplay.co.uk",
+          "; domain=.parentplay.co.uk"
+        ];
+
+        domains.forEach(function (domain) {
+          document.cookie =
+            name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/" + domain;
+        });
+      }
+    });
+
+    // Reload so the existing Analytics script cannot
+    // continue sending events during this visit.
+    if (analyticsLoaded) {
+      window.location.reload();
+    }
+  }
+}
+
+
+  document.getElementById("pp-accept").addEventListener("click", function () {
+    saveChoice("accepted");
+  });
+
+  document.getElementById("pp-reject").addEventListener("click", function () {
+    saveChoice("rejected");
+  });
+
+  let savedChoice = null;
+
+  try {
+    savedChoice = localStorage.getItem(storageKey);
+  } catch (error) {
+    // Storage may be unavailable in private browsing.
+  }
+
+  if (savedChoice === "accepted") {
+    loadAnalytics();
+  } else if (savedChoice !== "rejected") {
+    banner.hidden = false;
+  }
+
+  window.parentPlayCookieSettings = function () {
+    banner.hidden = false;
+  };
+})();
+</script></body></html>
