@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en-GB"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Christmas Activities, Santa Grottos &amp; Free Santa Tracker | ParentPlay</title>
+<meta content="Make Christmas magical with ParentPlay. Discover Christmas activities for children, find Santa grottos near you and enjoy our free festive countdown and make-believe Santa tracker." name="description"/>
+<link href="https://parentplay.co.uk/christmas.html" rel="canonical"/>
+<link href="style.css" rel="stylesheet"/>
+<style>
+:root{--fir:#123d31;--pine:#195442;--gold:#ffe2a2;--snow:#fffaf1;--red:#ae2f38}
+html{scroll-behavior:smooth}body{background:#f9f1e7;color:#18392e}
+.xmas-wrap{overflow:hidden;background:radial-gradient(ellipse at 80% 8%,#477c67 0%,#123e32 43%,#0b2925 100%);color:white;position:relative}
+.xmas-wrap:before{content:'✳    ❄      ✳        ❄      ✳       ❄     ✳';position:absolute;top:16px;left:0;right:0;text-align:center;letter-spacing:3vw;color:#fff7;pointer-events:none}
+.xmas-container{max-width:1120px;margin:auto;padding:0 24px}
+.xmas-top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;position:relative;z-index:1}
+.xmas-top img{width:100px;max-height:82px;object-fit:contain}.xmas-top a{color:#fff;text-decoration:none;font-weight:700}.xmas-back{border:1px solid #fff8;padding:12px 20px;border-radius:999px;background:#ffffff18}
+.xmas-hero{text-align:center;padding:66px 0 62px;position:relative}.xmas-kicker{color:#ffe2a2;font-weight:800;letter-spacing:.17em;text-transform:uppercase;font-size:13px}
+.xmas-hero h1{font-size:clamp(48px,8vw,104px);line-height:1.03;margin:20px 0;font-weight:900;color:white;text-shadow:0 5px 30px #001b1788}.xmas-hero h1 em{font-style:normal;color:var(--gold)}
+.xmas-hero p{font-size:clamp(17px,2.4vw,23px);max-width:730px;margin:0 auto 30px;color:#f7f4e8}
+.xmas-btn{display:inline-block;border-radius:999px;background:#f7d990;color:#173c30;padding:16px 26px;text-decoration:none;font-weight:850;box-shadow:0 9px 20px #0018;transition:transform .2s}.xmas-btn:hover{transform:translateY(-3px)}
+.xmas-lights{height:12px;background:repeating-linear-gradient(90deg,#eec66a 0 12px,#ba373c 12px 23px,#69b59b 23px 34px,#f7edc3 34px 46px);box-shadow:0 0 17px #ffd78b99}
+.xmas-main{background:linear-gradient(#fffaf1,#f5eee3);padding:64px 0}.xmas-heading{text-align:center;max-width:800px;margin:0 auto 35px}.xmas-heading h2{font-size:clamp(30px,4vw,50px);line-height:1.15;color:#174b3a;margin:10px 0}.xmas-heading p{font-size:18px;color:#52645b}
+.xmas-feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.xmas-feature{background:white;border-radius:30px;padding:34px;border:1px solid #e6ddc9;box-shadow:0 12px 35px #16473512}.xmas-feature .symbol{font-size:52px}.xmas-feature h3{font-size:30px;color:#1c4d3e;margin:12px 0}.xmas-feature p{color:#53635c;font-size:17px;min-height:72px}.xmas-feature a{display:inline-block;margin-top:12px;background:#d9efe4;color:#174e3e;border-radius:999px;padding:13px 20px;font-weight:800;text-decoration:none}
+.xmas-tracker-section{background:linear-gradient(135deg,#153e35,#082924);padding:75px 0;color:white;position:relative}.xmas-tracker-section:before{content:'✦  ✳  ❄  ✦  ✳  ❄  ✦';position:absolute;right:10px;top:16px;color:#fff4;letter-spacing:20px}.xmas-tracker-card{border:2px solid #d9b875;border-radius:36px;padding:42px 28px;background:radial-gradient(circle at 50% 0%,#356959,#133d34 70%);text-align:center;box-shadow:0 24px 50px #0018;position:relative}.xmas-tracker-card h2{color:#fff;font-size:clamp(32px,5vw,55px);margin:12px 0}.xmas-tracker-card p{color:#f2e9d4}.xmas-count{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:26px auto}.xmas-unit{background:#f9f4e7;color:#184536;border-radius:20px;min-width:104px;padding:17px 12px}.xmas-unit strong{display:block;font-size:38px;line-height:1.1}.xmas-unit span{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.05em}.xmas-status{max-width:680px;margin:22px auto;font-size:18px}.xmas-disclaimer{font-size:13px;color:#e4d6bb!important}.xmas-support{background:#fff8ed;border-radius:24px;padding:25px;color:#184736!important;max-width:710px;margin:30px auto 0;font-size:18px;font-weight:800}.xmas-support small{display:block;font-weight:500;margin-top:7px;color:#556d60}.xmas-support a{color:#146448}
+.xmas-app{padding:75px 0;background:#edf5ed}.xmas-app-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.xmas-app h2{font-size:clamp(32px,4vw,49px);color:#194a3b}.xmas-app p{font-size:18px;color:#53665a;line-height:1.7}.xmas-phone{max-width:325px;width:100%;display:block;margin:auto;border:11px solid #182823;border-radius:42px;box-shadow:0 25px 55px #0d332e44}.xmas-pill{display:inline-block;border-radius:999px;padding:9px 16px;background:#d9ebdf;color:#215a45;font-weight:800}
+.xmas-footer{text-align:center;background:#0d2b25;color:#f6ebd9;padding:34px 20px}.xmas-footer a{color:#ffdda0}
+@media(max-width:700px){.xmas-feature-grid,.xmas-app-grid{grid-template-columns:1fr}.xmas-hero{padding:46px 0}.xmas-feature{padding:26px}.xmas-feature p{min-height:0}.xmas-tracker-card{padding:32px 15px}.xmas-unit{min-width:70px;flex:1;padding:12px 7px}.xmas-unit strong{font-size:28px}.xmas-app-grid>div:first-child{order:2}}
+</style></head><body>
+<div class="xmas-wrap"><div class="xmas-container"><div class="xmas-top"><a href="index.html"><img alt="ParentPlay home" src="logo.png"/></a><a class="xmas-back" href="index.html">← Back to ParentPlay</a></div><section class="xmas-hero"><div class="xmas-kicker">🎄 ParentPlay Christmas 2026 🎄</div><h1>Make Christmas<br/><em>magical.</em></h1><p>Find festive family activities, discover places to meet Santa and count down to the big day — all in one cosy Christmas corner.</p><a class="xmas-btn" href="#finders">Explore Christmas adventures ↓</a></section></div></div><div class="xmas-lights"></div>
+<main><section class="xmas-main" id="finders"><div class="xmas-container"><div class="xmas-heading"><div class="xmas-kicker" style="color:#a02c33">✨ Your festive family adventure starts here ✨</div><h2>Two ways to make December special</h2><p>Choose a magical outing or make something wonderful together at home.</p></div><div class="xmas-feature-grid"><article class="xmas-feature"><div class="symbol">🎅</div><h3>Find a Santa grotto</h3><p>Looking for Father Christmas? Discover ways to search for nearby grottos, Christmas markets and festive family experiences. Check dates and bookings with each venue.</p><a href="find-santa.html">Explore Santa grotto finder →</a></article><article class="xmas-feature"><div class="symbol">🎨</div><h3>Christmas activity finder</h3><p>From handmade decorations and festive baking to indoor games and winter adventures, find ideas for magical family time.</p><a href="christmas-activities.html">Explore Christmas activities →</a></article></div></div></section>
+<section class="xmas-tracker-section" id="tracker"><div class="xmas-container"><div class="xmas-tracker-card"><div class="xmas-kicker">🛷 A little magic for the whole family</div><h2>Santa's Magical Tracker</h2><p id="xmas-label">Counting down to Christmas Day 2026</p><div aria-label="Time until Christmas" class="xmas-count" role="timer"><div class="xmas-unit"><strong id="xmas-days">--</strong><span>Days</span></div><div class="xmas-unit"><strong id="xmas-hours">--</strong><span>Hours</span></div><div class="xmas-unit"><strong id="xmas-minutes">--</strong><span>Minutes</span></div><div class="xmas-unit"><strong id="xmas-seconds">--</strong><span>Seconds</span></div></div><p class="xmas-status" id="xmas-status">The elves are busy preparing for Christmas! Come back as the big day gets closer for more festive fun.</p><p class="xmas-disclaimer">A fun, fictional Christmas experience for families — not real-time tracking.</p><div class="xmas-support">Provided by the ParentPlay App Team, free of charge. Please support us by downloading our app.<small>ParentPlay is preparing for its December launch. <a href="https://play.google.com/apps/testing/uk.co.parentplay.app">Join our Google Play test</a> if you have been invited, or <a href="index.html">discover ParentPlay</a> while we get ready.</small></div></div></div></section>
+<section class="xmas-app"><div class="xmas-container xmas-app-grid"><div><span class="xmas-pill">🌳 Meet ParentPlay</span><h2>Less scrolling. More Christmas memories.</h2><p>ParentPlay helps parents and carers find age-appropriate things to do with their children, whether you're looking for local places, an outdoor adventure or something creative at home.</p><p>See the actual ParentPlay app homepage here. Our Christmas-themed in-app features are being developed for the December launch.</p><a class="xmas-btn" href="index.html">Discover the ParentPlay app →</a></div><div><img alt="Real screenshot of ParentPlay app homepage showing weather, child profiles and adventure choices" class="xmas-phone" loading="lazy" src="parentplay-home-current.jpg"/></div></div></section></main>
+<footer class="xmas-footer">🎄 Made with a little Christmas magic by the ParentPlay team · <a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="mailto:support@parentplay.co.uk">Contact us</a> · <a href="#" onclick="parentPlayCookieSettings();return false;">Cookie Settings</a><br/>© 2026 ParentPlay</footer>
+<script>
+(function(){const target=Date.UTC(2026,11,25,0,0,0);function update(){const now=Date.now(),left=Math.max(0,target-now),days=Math.floor(left/86400000),hours=Math.floor(left/3600000)%24,minutes=Math.floor(left/60000)%60,seconds=Math.floor(left/1000)%60;for(const [key,val] of Object.entries({days,hours,minutes,seconds})){document.getElementById('xmas-'+key).textContent=String(val).padStart(2,'0')}const status=document.getElementById('xmas-status');if(now>=target){status.textContent='Merry Christmas from the ParentPlay team! 🎄';document.getElementById('xmas-label').textContent='Christmas Day is here!'}else if(now>=Date.UTC(2026,11,23)){status.textContent='Santa’s magical journey is nearly here! Our pretend sleigh tracker is being prepared. 🛷'} }update();setInterval(update,1000)})();
+</script>
+<div aria-label="Cookie preferences" hidden="" id="pp-cookie-banner" role="region" style="position:fixed;bottom:16px;left:16px;right:16px;max-width:560px;margin:auto;background:#fff;color:#243d35;padding:20px;border-radius:16px;box-shadow:0 4px 25px #0003;z-index:9999;font-family:Arial,sans-serif">
+<strong>Help us improve ParentPlay 🌳</strong>
+<p style="line-height:1.5">
+    We'd like to use optional analytics cookies to understand how
+    visitors use our website. You can accept or reject them.
+  </p>
+<div style="display:flex;gap:10px;flex-wrap:wrap">
+<button id="pp-reject" style="padding:12px;border:1px solid #36765d;border-radius:8px;background:white;color:#24543f;cursor:pointer" type="button">
+      Reject optional cookies
+    </button>
+<button id="pp-accept" style="padding:12px;border:0;border-radius:8px;background:#36765d;color:white;cursor:pointer" type="button">
+      Accept analytics
+    </button>
+</div>
+</div><script>
+(function () {
+  const measurementId = "G-3LKQXDK19L";
+  const storageKey = "parentplay_analytics_consent";
+  const banner = document.getElementById("pp-cookie-banner");
+  let analyticsLoaded = false;
+
+  function loadAnalytics() {
+    if (analyticsLoaded) return;
+    analyticsLoaded = true;
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () {
+      window.dataLayer.push(arguments);
+    };
+
+    window.gtag("js", new Date());
+    window.gtag("config", measurementId);
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=" +
+      encodeURIComponent(measurementId);
+    document.head.appendChild(script);
+  }
+
+ 
+function saveChoice(choice) {
+  try {
+    localStorage.setItem(storageKey, choice);
+  } catch (error) {
+    // If storage is unavailable, ask again next visit.
+  }
+
+  banner.hidden = true;
+
+  if (choice === "accepted") {
+    loadAnalytics();
+  } else {
+    // Stop future Analytics collection.
+    if (typeof window.gtag === "function") {
+      window.gtag("consent", "update", {
+        analytics_storage: "denied"
+      });
+    }
+
+    // Clear first-party Google Analytics cookies.
+    document.cookie.split(";").forEach(function (cookie) {
+      const name = cookie.split("=")[0].trim();
+
+      if (name === "_ga" || name.startsWith("_ga_")) {
+        const domains = [
+          "",
+          "; domain=parentplay.co.uk",
+          "; domain=.parentplay.co.uk"
+        ];
+
+        domains.forEach(function (domain) {
+          document.cookie =
+            name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/" + domain;
+        });
+      }
+    });
+
+    // Reload so the existing Analytics script cannot
+    // continue sending events during this visit.
+    if (analyticsLoaded) {
+      window.location.reload();
+    }
+  }
+}
+
+
+  document.getElementById("pp-accept").addEventListener("click", function () {
+    saveChoice("accepted");
+  });
+
+  document.getElementById("pp-reject").addEventListener("click", function () {
+    saveChoice("rejected");
+  });
+
+  let savedChoice = null;
+
+  try {
+    savedChoice = localStorage.getItem(storageKey);
+  } catch (error) {
+    // Storage may be unavailable in private browsing.
+  }
+
+  if (savedChoice === "accepted") {
+    loadAnalytics();
+  } else if (savedChoice !== "rejected") {
+    banner.hidden = false;
+  }
+
+  window.parentPlayCookieSettings = function () {
+    banner.hidden = false;
+  };
+})();
+</script></body></html>
