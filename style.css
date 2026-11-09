@@ -43,3 +43,13 @@
 .christmas-hero .phone{display:block;transform:none;filter:none;width:100%;max-width:285px;height:auto;border-radius:28px;box-shadow:none}
 @media(max-width:760px){.hero-visual .phone-frame{max-width:238px;padding:11px;border-radius:30px}.christmas-hero .phone{width:100%;max-width:none;border-radius:21px}.button{padding:13px 20px}.category{border-radius:22px}}
 @media(prefers-reduced-motion:reduce){.button,.hero-cta,.contact-button,.launch-contact,.category{transition:none}}
+
+/* ParentPlay Christmas discovery pages */
+.pp-christmas{background:linear-gradient(160deg,#f3faf4,#fff9ee)}
+.pp-festive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:34px}
+.pp-festive-card{display:block;padding:28px;border-radius:30px;background:#e9f5ed;border:1px solid #d8e9df;color:#193f35;text-decoration:none;box-shadow:0 7px 0 #347d6215;transition:transform .2s ease}
+.pp-festive-card:nth-child(2){background:#f3ebf7}.pp-festive-card:nth-child(3){background:#e4f3fa}
+.pp-festive-card:hover{transform:translateY(-4px)}.pp-festive-card h3{font-size:1.4rem;margin:10px 0}.pp-festive-card p{line-height:1.6}.pp-card-icon{font-size:2.8rem}.pp-card-action{display:inline-block;margin-top:12px;color:#236d52;font-weight:800}.pp-note{font-size:.95rem;color:#52665e;margin-top:24px}
+.pp-page{min-height:65vh;background:linear-gradient(145deg,#fffaf0,#edf8f1);padding:55px 0 85px}.pp-page h1{font-size:clamp(2rem,4vw,3.7rem);line-height:1.15;color:#205b48;margin:12px 0}.pp-page-intro{font-size:1.15rem;max-width:760px;line-height:1.7}.pp-kicker{font-weight:800;letter-spacing:.1em;color:#9a702d;text-transform:uppercase}.pp-panel{background:white;border-radius:26px;padding:25px;margin-top:24px;box-shadow:0 8px 30px #123a2712}.pp-panel h2{margin-top:0;color:#205b48}.pp-panel li{margin:10px 0;line-height:1.6}.pp-panel p{line-height:1.65}.pp-info-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:20px}.pp-info-grid .pp-panel{margin:0}.pp-back{display:inline-block;margin-bottom:18px;color:#286f57;font-weight:800}.pp-primary-link{display:inline-block;border-radius:22px;background:linear-gradient(110deg,#2a946e,#66cda0);color:white;text-decoration:none;font-weight:800;padding:15px 23px;margin-top:12px}.pp-muted{color:#56695f;font-size:.95rem}.pp-countdown{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;color:#21694e}.pp-sleigh{font-size:4rem;text-align:center;padding:24px 0;animation:pp-float 4s ease-in-out infinite}@keyframes pp-float{50%{transform:translateY(-10px)}}
+@media(max-width:800px){.pp-festive-grid{grid-template-columns:1fr}.pp-info-grid{grid-template-columns:1fr}.pp-page{padding:35px 0 60px}}
+@media(prefers-reduced-motion:reduce){.pp-sleigh{animation:none}.pp-festive-card{transition:none}}
