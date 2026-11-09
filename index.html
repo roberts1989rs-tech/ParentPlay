@@ -53,19 +53,52 @@
     document.head.appendChild(script);
   }
 
-  function saveChoice(choice) {
-    try {
-      localStorage.setItem(storageKey, choice);
-    } catch (error) {
-      // If storage is unavailable, ask again on the next visit.
+ 
+function saveChoice(choice) {
+  try {
+    localStorage.setItem(storageKey, choice);
+  } catch (error) {
+    // If storage is unavailable, ask again next visit.
+  }
+
+  banner.hidden = true;
+
+  if (choice === "accepted") {
+    loadAnalytics();
+  } else {
+    // Stop future Analytics collection.
+    if (typeof window.gtag === "function") {
+      window.gtag("consent", "update", {
+        analytics_storage: "denied"
+      });
     }
 
-    banner.hidden = true;
+    // Clear first-party Google Analytics cookies.
+    document.cookie.split(";").forEach(function (cookie) {
+      const name = cookie.split("=")[0].trim();
 
-    if (choice === "accepted") {
-      loadAnalytics();
+      if (name === "_ga" || name.startsWith("_ga_")) {
+        const domains = [
+          "",
+          "; domain=parentplay.co.uk",
+          "; domain=.parentplay.co.uk"
+        ];
+
+        domains.forEach(function (domain) {
+          document.cookie =
+            name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/" + domain;
+        });
+      }
+    });
+
+    // Reload so the existing Analytics script cannot
+    // continue sending events during this visit.
+    if (analyticsLoaded) {
+      window.location.reload();
     }
   }
+}
+
 
   document.getElementById("pp-accept").addEventListener("click", function () {
     saveChoice("accepted");
