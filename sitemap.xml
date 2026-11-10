@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://parentplay.co.uk/</loc></url>
-<url><loc>https://parentplay.co.uk/christmas.html</loc></url>
-<url><loc>https://parentplay.co.uk/find-santa.html</loc></url>
-<url><loc>https://parentplay.co.uk/christmas-activities.html</loc></url>
+  <url><loc>https://parentplay.co.uk/index.html</loc></url>
+  <url><loc>https://parentplay.co.uk/family-days-out.html</loc></url>
+  <url><loc>https://parentplay.co.uk/activities-near-me.html</loc></url>
+  <url><loc>https://parentplay.co.uk/farms-and-animals.html</loc></url>
+  <url><loc>https://parentplay.co.uk/indoor-activities.html</loc></url>
+  <url><loc>https://parentplay.co.uk/outdoor-adventures.html</loc></url>
+  <url><loc>https://parentplay.co.uk/bmx-and-cycling.html</loc></url>
+  <url><loc>https://parentplay.co.uk/science-experiments.html</loc></url>
+  <url><loc>https://parentplay.co.uk/free-family-activities.html</loc></url>
+  <url><loc>https://parentplay.co.uk/arts-and-crafts.html</loc></url>
+  <url><loc>https://parentplay.co.uk/christmas.html</loc></url>
+  <url><loc>https://parentplay.co.uk/find-santa.html</loc></url>
+  <url><loc>https://parentplay.co.uk/privacy.html</loc></url>
+  <url><loc>https://parentplay.co.uk/terms.html</loc></url>
 </urlset>
